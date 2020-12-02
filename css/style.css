@@ -1,0 +1,396 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 85%;
+    margin: 0px auto;
+    padding: 0px 25px;
+}
+
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0px 25px;
+    border-bottom: 1px solid gray;
+}
+
+.left a {
+    color: #6b6b6b;
+    text-decoration: none;
+}
+
+.left a:hover {
+    color: rgb(20, 16, 16);
+}
+
+.right i {
+    margin: 0px 6px;
+}
+
+.right button {
+    padding: 6px 7px;
+    cursor: pointer;
+}
+
+
+/* Navigation bar */
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    flex: auto;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #6b6b6b;
+}
+
+nav ul li:hover {
+    background-color: rgb(211, 211, 211);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+/* Tittle Blog */
+
+.tittle-blog {
+    background-color: #3a3a3a;
+    height: 400px;
+    color: white;
+    padding: 50px;
+}
+
+.tittle-content {
+    width: 38%;
+}
+
+.tittle-content h1 {
+    font-style: italic;
+    font-size: 44px;
+    font-family: "Roboto", sans-serif;
+}
+
+.tittle-content p {
+    margin: 40px 0px;
+    font-size: 20px;
+}
+
+.tittle-content p a {
+    text-decoration: none;
+    margin: 20px 0px;
+    color: white;
+    font-weight: bold;
+}
+
+.tittle-content p a:hover {
+    color: rgb(245, 210, 210);
+}
+
+
+/* Cards */
+
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0px;
+}
+
+.card {
+    width: 48%;
+    display: grid;
+    grid-template-columns: 68% 32%;
+    margin: 10px 0px;
+    height: 200px;
+}
+
+.col-1 {
+    color: black;
+    height: 200px;
+    padding: 0px 35px;
+    border: 1px solid #656363;
+}
+
+.col-2 {
+    display: flex;
+    color: white;
+    height: 200px;
+    background-color: #656363;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-card .col-1 h4 {
+    color: blue;
+}
+
+.right-card .col-1 h4 {
+    color: green;
+}
+
+.left-card .col-1 h4,
+.right-card .col-1 h4 {
+    font-size: 14px;
+    margin-top: 18px;
+}
+
+.left-card .col-1 h3,
+.right-card .col-1 h3 {
+    margin-top: 10px;
+}
+
+.left-card .col-1 .date,
+.right-card .col-1 .date {
+    margin-top: 4px;
+}
+
+.left-card .col-1 .description,
+.right-card .col-1 .description {
+    margin-top: 10px;
+}
+
+.left-card .col-1 a,
+.right-card .col-1 a {
+    position: relative;
+    top: 15px;
+    text-decoration: none;
+}
+
+
+/* Main blogs content */
+
+.blogs-container {
+    display: grid;
+    grid-template-columns: 68% 28%;
+    justify-content: space-around;
+    grid-column-gap: 4%;
+}
+
+.blogs-col-1 {
+    padding-right: 25px;
+}
+
+.blogs-col-1 .heading {
+    padding: 10px 0px;
+}
+
+.blogs-col-1 .heading b {
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.blogs-col-1 .main-blog .blog-heading {
+    margin-top: 20px;
+}
+
+.blogs-col-1 p.date {
+    color: #6c757d;
+    margin-top: 8px;
+}
+
+.blogs-col-1 p,
+.blogs-col-1 li {
+    font-size: 18px;
+}
+
+.person,
+.blogs-col-1 a {
+    color: #006ee4;
+    text-decoration: none;
+}
+
+.blogs-col-1 a:hover {
+    color: rgb(255, 46, 46);
+}
+
+.blogs-col-1 .blog_description p {
+    margin: 20px 0px;
+}
+
+.blogs-col-1 .main-blog .heading p {
+    margin: 5px 0px;
+}
+
+.blogs-col-1 .main-blog .sub-heading p {
+    margin: 10px 0px;
+}
+
+.blogs-col-1 .main-blog .sub-heading {
+    margin: 25px 0px;
+}
+
+.code {
+    margin: 20px 0px;
+    font-size: 13px;
+}
+
+.blogs-col-1 ul,
+.blogs-col-1 ol {
+    position: relative;
+    left: 40px;
+    margin: 15px 0px;
+}
+
+.blogs-col-1 .another-blog {
+    margin: 50px 0px;
+}
+
+
+/* Blog Submission Form */
+
+.form-container {
+    margin: 50px 0px;
+}
+
+.form-container h1 {
+    margin: 15px 0px;
+}
+
+.form-container .form-input {
+    margin-bottom: 13px;
+}
+
+.form-container .form-input label {
+    float: left;
+    width: 150px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.form-container .form-input textarea,
+.form-container .form-input input {
+    padding: 5px 3px;
+    width: 280px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.form-container .form-input textarea {
+    height: 130px;
+}
+
+.form-container .form-btn {
+    position: relative;
+    left: 150px;
+}
+
+.form-container .form-btn input {
+    padding: 6px 8px;
+    margin: 0px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.form-container .form-btn input:hover {
+    background-color: gray;
+    color: white;
+    transition: 0.4s;
+}
+
+.form-container .form-btn input:first-child {
+    margin-right: 10px;
+}
+
+
+/* Blog Buttons */
+
+.blog-btn {
+    margin: 50px 0px;
+}
+
+.blog-btn button {
+    font-weight: bold;
+    padding: 8px 14px;
+    color: #006ee4;
+    background-color: white;
+    border: 1px solid #006ee4;
+    border-radius: 40px;
+    outline: none;
+}
+
+.blog-btn .older:hover {
+    color: white;
+    background-color: #006ee4;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.blog-btn .newer {
+    color: rgb(156, 156, 156);
+    border: 1px solid rgb(173, 169, 169);
+}
+
+
+/* COLUMN 2 */
+
+.blogs-col-2 .rows {
+    padding: 22px 0px;
+}
+
+.rows h2 {
+    font-size: 30px;
+}
+
+.blogs-col-2 p,
+.blogs-col-2 ul {
+    margin-top: 10px;
+}
+
+.blogs-col-2 ul {
+    list-style: none;
+}
+
+.blogs-col-2 ul li {
+    margin: 5px 0px;
+}
+
+.blogs-col-2 ul li a {
+    text-decoration: none;
+    color: #006ee4;
+}
+
+.blogs-col-2 ul li a:hover {
+    text-decoration: underline;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #efefef;
+    padding: 28px 0px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    color: #7e7e7e;
+    margin: 14px 0px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #006ee4;
+}
+
+footer a:hover {
+    color: red;
+}
